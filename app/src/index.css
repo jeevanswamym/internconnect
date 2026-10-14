@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 210 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 15%;
+    --primary: 155 65% 10%;
+    --primary-foreground: 68 65% 90%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 210 10% 40%;
+    --accent: 68 65% 73%;
+    --accent-foreground: 155 65% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 155 65% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 155 65% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 155 65% 10%;
+  }
+
+  .dark {
+    --background: 155 65% 6%;
+    --foreground: 0 0% 98%;
+    --card: 155 50% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 155 50% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 68 65% 73%;
+    --primary-foreground: 155 65% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 155 40% 15%;
+    --muted-foreground: 210 10% 65%;
+    --accent: 68 65% 73%;
+    --accent-foreground: 155 65% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 155 30% 18%;
+    --input: 155 30% 18%;
+    --ring: 68 65% 73%;
+    --sidebar-background: 155 65% 8%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 68 65% 73%;
+    --sidebar-primary-foreground: 155 65% 10%;
+    --sidebar-accent: 155 40% 15%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 155 30% 18%;
+    --sidebar-ring: 68 65% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-forest {
+    background-color: #0A2B20;
+  }
+  .bg-forest-light {
+    background-color: #113822;
+  }
+  .text-lime {
+    color: #DCE885;
+  }
+  .bg-lime {
+    background-color: #DCE885;
+  }
+  .bg-lime-hover:hover {
+    background-color: #d4df7a;
+  }
+  .border-lime {
+    border-color: #DCE885;
+  }
+  .bg-dashboard {
+    background-color: #F7F7F7;
+  }
+  .bg-card-white {
+    background-color: #FFFFFF;
+  }
+  .text-slate-dark {
+    color: #1a2e1a;
+  }
+}
